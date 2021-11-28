@@ -2,21 +2,7 @@ import { NavLink } from 'react-router-dom';
 import './footer.css';
 const Footer = () => {
   return (
-    // <div>
-    //   <hr></hr>
-    //   <footer className="text-muted main-footer">
-    //   <p>
-    //     Home<span className="space">|</span>
-    //     About <span className="space">|</span>
-    //     Shop <span className="space">|</span>
-    //     Help </p>
-        
-    //       <svg class="bi" width="30" height="24"></svg>
-
-    //       <span class="text-muted">© 2021 Company, Inc</span>
-        
-    //   </footer>
-    // </div>
+   
 <>
 <div className="foot-style">
     <footer>
@@ -34,7 +20,7 @@ const Footer = () => {
        </NavLink>
      </li>
      <li >
-       <NavLink className="style link" to="/products">
+       <NavLink className="style link" to="/">
          Shop&nbsp;&nbsp; <span>|</span>
        </NavLink>
      </li>
