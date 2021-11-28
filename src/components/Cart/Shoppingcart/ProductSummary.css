@@ -1,0 +1,25 @@
+.img-summary{
+    width: 130px;
+    height: 100px;
+    float: left;
+    margin-right: 30px;
+}
+image{
+    width:20px;
+}
+.btns{
+    margin: 40px;
+   
+}
+.btn-a{
+    margin-right:40px;
+    padding:0 40px;
+
+}
+.btn-b{
+    padding:0 40px;
+
+}
+.total{
+    margin-left:400px;
+}

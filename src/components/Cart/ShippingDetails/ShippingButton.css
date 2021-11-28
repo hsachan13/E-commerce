@@ -1,0 +1,14 @@
+.radio-button{
+    width:200px;
+}
+@media (max-width:875px) {
+    .radio-button{
+        width:170px;
+    }
+.heading{
+    font-size: 15px;
+}
+.head-text{
+    font-size: 13px;
+}
+ }

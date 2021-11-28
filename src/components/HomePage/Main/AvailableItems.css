@@ -1,0 +1,8 @@
+ul{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.items{
+    margin-bottom:200px;
+}

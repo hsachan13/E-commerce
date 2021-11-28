@@ -1,0 +1,78 @@
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #ada8a6;
+    color: white;
+    /* padding: 0.75rem 3rem; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border-radius: 25px; */
+    border: #ada8a6;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+  }
+  .text{
+    text-decoration: none;
+    color:cornsilk;
+  }
+  
+  .button:hover,
+  .button:active {
+    background-color: #2c0d00;
+  }
+  
+  .icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.3rem;
+  }
+  
+  .badge {
+    background-color: #ada8a6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 25px;
+    /* margin-left: 1rem; */
+    font-weight: bold;
+  }
+  .cart-btn{
+    text-decoration: none;
+  }
+  
+  .button:hover .badge,
+  .button:active .badge {
+    background-color: #686362;
+  }
+  
+  .bump {
+    animation: bump 300ms ease-out;
+  }
+  
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @media (max-width:576px) {
+    .button{
+      /* display: none; */
+      position: absolute;
+      top: 0;
+      right: 20px;
+  }
+  }

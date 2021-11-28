@@ -1,0 +1,36 @@
+
+.foot-style{
+    text-align: center;
+    background-color: black;
+    
+}
+.footer{
+    text-decoration: none;
+    list-style:none;
+    display: flex;
+    
+}
+.link{
+    margin-right: 10px;
+}
+.style:visited
+{
+  text-decoration:none;
+  color:#EAEAEA;
+  font-weight:normal;
+  text-shadow:1px 1px 1px #000;
+}
+
+.style:active
+{
+  text-decoration:none;
+  color:#EAEAEA;
+  text-shadow:1px 1px 1px #000;
+}
+
+.style:hover
+{
+  text-decoration:none;
+  color:#EAEAEA;
+  text-shadow:1px 1px 1px #000;
+}

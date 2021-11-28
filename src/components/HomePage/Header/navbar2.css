@@ -1,0 +1,44 @@
+
+.navbar{
+    position:fixed !important;
+    right:0;
+    left:0;
+    z-index: 1;
+}
+.nav-link{
+    margin-right: 10px;
+}
+.style{
+    text-decoration: none;
+    color:#fff;
+}
+
+@media (max-width:650px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        /* padding-bottom: 100px; */
+    }
+    .media{
+        text-align: center;
+    }
+    .remove{
+        display: none;
+    }
+}
+
+@media (max-width:650px) {
+    .media{
+        text-align: center;
+    }
+    .invisible{
+        display: none;
+    }
+    
+}
+@media (max-width:576px){
+    .jumb{
+        padding-top:130px;
+        padding-right: 0;
+    }
+}

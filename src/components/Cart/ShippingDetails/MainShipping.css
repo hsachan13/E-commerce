@@ -1,0 +1,117 @@
+/* 
+.form{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.full{
+
+}
+.next{
+    display: inline-block;
+}
+.radio{
+    width:50px;
+    height:50px;
+} */
+.topMost-ship{
+  display: flex;
+}
+.form{
+    display: block;
+    width: 100%;
+    /* padding: .375rem .75rem; */
+    font-size: 1rem;
+    font-weight: 400;
+    /* line-height: 1.5; */
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.next{
+    display: inline-block;
+}
+.radio{
+    width:50px;
+    height:50px;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+.actions button:hover,
+.actions button:active {
+  background-color: #ffe6dc;
+}
+
+.actions .submit {
+  border: 1px solid #5a1a01;
+  background-color: #5a1a01;
+  color: white;
+}
+
+.actions .submit:hover,
+.actions .submit:active {
+  background-color: #7a2706;
+}
+
+.invalid label {
+  color: #ca3e51;
+}
+
+.invalid input {
+  border-color: #aa0b20;
+  background-color: #ffeff1;
+}
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .actions button {
+    font: inherit;
+    color: #5a1a01;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 2rem; 
+  }
+.shipSum{
+  margin-right: 50px;
+}
+
+@media (max-width:875px) {
+   .topMost-ship{
+     display: flex;
+     flex-direction: column;
+   }
+}
+
+@media (max-width:576px) {
+  .main{
+    width:400px;
+  }
+}

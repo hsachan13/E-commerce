@@ -1,0 +1,25 @@
+.desc-img{
+    float: right;
+    width:300px;
+    height:300px;
+}
+.price{
+    display:flex;
+}
+.dropdown{
+    margin-left: 20px;
+    position: inherit;
+}
+
+
+/* Media queries */
+@media (max-width:1242px) {
+    .lead{
+        width:400px;
+    }
+}
+@media (max-width:840px) {
+    .lead{
+        width:250px;
+    }
+}
