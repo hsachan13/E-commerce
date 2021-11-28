@@ -15,11 +15,14 @@ img{
 }
 .title-style{
   text-decoration: inherit;
-  color: blue;
+  color: #2C272E;
   cursor: pointer;
   font-weight: 500;
 }
+.title-style:hover{
+  color: #6D9886;
 
+}
 /* @media (max-width :1100px) {
   .left{
    padding-left: 0px;
