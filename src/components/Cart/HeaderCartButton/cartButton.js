@@ -12,7 +12,7 @@ const CartButton = (props) => {
   return (
     <button className={classes.button}>
       <span className={classes.icon}>
-      <i class="fa fa-shopping-cart" style={{"color" : "black"}}></i>      </span>
+      <i class="fa fa-shopping-cart" style={{"color" : "#fff"}}></i>      </span>
       <NavLink  to="/cart" className={classes.text}><span >Your Cart</span></NavLink>
       <span className={classes.badge}>{numberOfCartItem}</span>
     </button>
