@@ -14,16 +14,7 @@ const isNotEnough = (value) => value.trim().length !== 6;
 const phoneCheck = (value) => value.trim().length !== 10;
 
 const MainShipping = () => {
-  // const [disabled, setDisabled] = useState(false);
-  // const [formInputValidity, setFormInputsValidity] = useState({
-  //   FName: true,
-  //   Lname: true,
-  //   address: true,
-  //   country: true,
-  //   city: true,
-  //   zip: true,
-  //   phoneNumber: true,
-  // });
+ 
 
   const [firstname, setFirstname] = useState('');
   const [LastName, setLastname] = useState('');
@@ -154,13 +145,16 @@ const MainShipping = () => {
               Zip
             </label>
             <input
-            onChange={ e =>{
-              setisTouched(true);
-              if(e.target.value.trim().length === 6){
-                setisTouched(false);
-              setZip(e.target.value)}
-        }
-        }
+            onChange={(e) => {
+                setisTouched(true);
+                if (e.target.value.trim().length === 6) {
+                  setisTouched(false);
+                  setZip(e.target.value);
+                } else {
+                  setisTouched(true);
+                  setZip("");
+                }
+              }}
               type="text"
               className="form"
               id="inputZip"
@@ -174,11 +168,15 @@ const MainShipping = () => {
               Phone Number
             </label>
             <input
-            onChange={ e => {
-              setphoneTouched(true);
-              if(e.target.value.trim().length > 9){
-                setphoneTouched(false);
-                setPhoneNumber(e.target.value)}
+           onChange={(e) => {
+                setphoneTouched(true);
+                if (e.target.value.trim().length === 10) {
+                  setphoneTouched(false);
+                  setPhoneNumber(e.target.value);
+                } else {
+                  setphoneTouched(true);
+                  setPhoneNumber("");
+                }
               }}
               type="text"
               className="form"
@@ -193,7 +191,7 @@ const MainShipping = () => {
           <div className="btns">
           <SubmitButton />
 
-            <NavLink to="/">
+            <NavLink to="/cart">
               <button type="button" className="btn-b btn btn-light">
                 Cancel
               </button>
