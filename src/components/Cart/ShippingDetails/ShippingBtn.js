@@ -11,7 +11,7 @@ return(
 
                     <div class="form-check ">
                         <div class="radio-button" >
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
                             <label class="form-check-label" for="flexRadioDefault1">
                      <h5 className="heading">Free shipping</h5>
                     </label>
