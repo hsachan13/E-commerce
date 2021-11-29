@@ -1,10 +1,10 @@
 # Getting Started with Create React App
 
 To properly run this project type these cmds in the terminal:
-npm i
-npm i bootstrap
-npm i font-awesome
-npm start
+npm i .\
+npm i bootstrap .\
+npm i font-awesome .\
+npm start .\
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
