@@ -30,7 +30,7 @@ const Payment = () => {
         </button>
       </NavLink> );
     }
-    else if (informationValid && creditTouched) {
+    else if (informationValid ) {
       return (
         <NavLink to="confirmation">
           <button className="btn-a btn btn-secondary" type="button">
