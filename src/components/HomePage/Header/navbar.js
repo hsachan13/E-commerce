@@ -22,7 +22,7 @@ const Navbar = (props) => {
       <NavbarPart/>
 
           <div className="jumb mb-5">
-            <h1>Tagline describing your e-commerce</h1>
+            <h1>FABfashion</h1>
             {/* <div className="form-group has-search">
     <span className="fa fa-search form-control-feedback"></span>
     <input type="text" className="form-control" placeholder="Search" />
