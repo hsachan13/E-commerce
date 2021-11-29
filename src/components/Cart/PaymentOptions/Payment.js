@@ -87,13 +87,17 @@ const Payment = () => {
                         type="text"
                         placeholder="0000   0000   0000   0000"
                         autocomplete="email"
-                        onChange={(e)=>{
+                      onChange={(e)=>{
                             setcardTouched(true);
                             if(e.target.value.trim().length === 16){
                                 setcardTouched(false);
                                 setcardNo(e.target.value)
                             }
-                        }}          
+                           else{
+                              setcardTouched(true);
+                              setcardNo('');
+                          }
+                        }}             
                         type="text"
 
                       />
@@ -112,6 +116,10 @@ const Payment = () => {
                                 setexpTouched(false);
                                 setexpNo(e.target.value)
                             }
+                            else{
+                              setexpTouched(true);
+                              setexpNo('');
+                          }
                         }}     
                       />
                    {expTouched && <p>*req</p>}
@@ -123,12 +131,17 @@ const Payment = () => {
                         id="cvv"
                         type="password"
                         placeholder="cvv"
-                        onChange={(e)=>{
+                      onChange={(e)=>{
                             setcvvTouched(true);
                             if(e.target.value.trim().length === 3){
                                 setcvvTouched(false);
                                 setcvv(e.target.value)
                             }
+                            else {
+                              setcvvTouched(true);
+                              setcvv('');
+                          }
+                            
                         }}  
                       />
                       {cvvTouched && <p>*req</p>}
@@ -147,7 +160,11 @@ const Payment = () => {
                             setNameTouched(false);
                             setholderName(e.target.value)
                         }
-                    }} 
+                        else{
+                          setNameTouched(true);
+                            setholderName('');
+                      }
+                    }}   
                     />
                     {NameTouched && <p>*req</p>}
                   </div>
@@ -189,7 +206,7 @@ const Payment = () => {
                   <div class="d-flex p-2 ">
                     <PaymentButton />
                     <div class="pay-cancel ps-2">
-                      <NavLink to="/">
+                      <NavLink to="/ship">
                         <button style={{ width: "150px", border: "none" }}>
                           Cancel
                         </button>
